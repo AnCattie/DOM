@@ -80,4 +80,13 @@ for (let i = 0; i < lengte; i++){
     firstol.removeChild(kinderen[0]);
 }
 
-let games = ["Silent Teacher", "Code Monkey", "CodeCombat"];
+let games = ["Silent Teacher ", "Code Monkey ", "CodeCombat"];
+let linkgames = ["http://silentteacher.toxicode.fr/","https://www.playcodemonkey.com/challenges/0","https://codecombat.com/premium"]
+for (let i = 0; i < games.length; i++){
+    let ligames = document.createElement("li");
+    let a = document.createElement("a");
+    a.textContent = games[i];
+    ligames.appendChild(a);
+    firstol.appendChild(ligames);
+    a.setAttribute("href",linkgames[i]);
+};
